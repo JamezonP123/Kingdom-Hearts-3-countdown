@@ -1,0 +1,59 @@
+<html>
+	<head>
+		<title>Kingdom Hearts 3 Countdown</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+
+
+	<body>
+		
+		<div class="center">
+			<h1 class="heading"></h1>
+			<div id="clock"></div>
+			
+		<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+		<script src="js/countdown.js"></script>
+		<script type="text/javascript">
+			$('#clock').countdown('2019/1/29', function(event){
+				var $this = $(this).html(event.strftime(''
+				+ '<div><span>%w</span><span>W</span></div>'
+				+ '<div><span>%d</span><span>D</span></div>'
+				+ '<div><span>%H</span><span>H</span></div>'
+				+ '<div><span>%M</span><span>M</span></div>'
+				+ '<div><span>%S</span><span>S</span></div>'
+
+				))	
+			})
+		</script>
+
+		<div class="mobileShow">
+			<button class="buy"> Buy </button>
+			<style type="text/css">
+
+			.mobileShow{
+				display: none;
+			}
+				 /* Smartphone Portrait and Landscape */ 
+  				@media only screen 
+				and (min-device-width : 320px) 
+				and (max-device-width : 620px){ 
+				.mobileShow {display: inline;}
+			}
+			</style>
+		</div>
+
+
+
+
+
+	</body>
+
+
+
+
+
+
+</html>
